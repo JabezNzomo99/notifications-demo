@@ -18,6 +18,6 @@ object AppConfig: KoinComponent {
     }
 
     object Firebase {
-        const val firebaseSA = "/Users/jabez/Desktop/service-account.json"
+        val firebaseSA = appConfig.config("ktor.firebase").property("sa").getString()
     }
 }

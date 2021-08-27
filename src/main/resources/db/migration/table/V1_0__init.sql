@@ -1,0 +1,1 @@
+CREATE TABLE IF NOT EXISTS subscriber (user_id uuid, create_at TIMESTAMP NOT NULL, update_at TIMESTAMP NULL, delete_at TIMESTAMP NULL, platform VARCHAR(150), token VARCHAR(200) NOT NULL, CONSTRAINT pk_subscriber PRIMARY KEY (user_id, platform))
